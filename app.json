@@ -1,0 +1,39 @@
+{
+  "name": "Tutorial Django ALES",
+  "description": "Tutorial de Django para o ALES",
+  "keywords": [
+    "django",
+    "python",
+    "tutorial"
+  ],
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "env": {
+    "ADMIN_ACCOUNT": {
+      "value": "",
+      "description": "Endereço de email para envio de logs de erro",
+      "required": true
+    },
+    "ALLOWED_HOSTS": {
+      "value": "['*']",
+      "description": "Domínios com permissão para acessar o app",
+      "required": false
+    },
+    "DJANGO_SECRET": {
+      "description": "Chave privada de encriptação usada pelo Django",
+      "generator": "secret"
+    },
+    "EMAIL_ACCOUNT": {
+      "description": "Endereço de email para envio de logs de erro e outros emails",
+      "required": true
+    },
+    "EMAIL_PASSWORD": {
+      "description": "Senha do endereço de email acima",
+      "required": true
+    },
+    "SHOW_TOOLBAR_CALLBACK": {
+      "description": "Mostrar toolbar de debug do Django",
+      "value": "True"
+    },
+}
