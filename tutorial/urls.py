@@ -19,9 +19,13 @@ from django.conf import settings
 
 import debug_toolbar
 
+from blog.views import Index, PostDetail
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', Index.as_view(), name='index'),
+    path('posts/<int:id>/', PostDetail.as_view(), name='post'),
 ]
 
 

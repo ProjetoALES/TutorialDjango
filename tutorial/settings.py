@@ -49,6 +49,8 @@ INSTALLED_APPS = [
 
     # Django extensions adiciona várias ferramentas úteis ao django
     'django_extensions',
+
+    'blog',
 ]
 
 MIDDLEWARE = [

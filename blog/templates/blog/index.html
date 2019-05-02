@@ -1,0 +1,14 @@
+{% extends "tutorial/base.html" %}
+
+{% block title %}
+Início do meu site 2
+{% endblock %}
+
+{% block content %}
+
+{% for post in post_list %}
+<a href="{% url 'post' post.id %}">Título: {{ post.title }}</a><br>
+Data: {{ post.created }}<br>
+{% endfor %}
+
+{% endblock %}
